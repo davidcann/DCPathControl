@@ -22,7 +22,7 @@ Apply a DCFileDropController to any CPView:
 
 	var pathControl = [[DCPathControl alloc] initWithFrame:CGRectMake(0, 0, 500, 36)];
 	[pathControl setDelegate:self];
-	[pathControl setURL:"/Root/Path/To/Current/Location"];
+	[pathControl setURL:[CPURL URLWithString:"/Root/Path/To/Current/Location"]];
 	[contentView addSubview:pathControl];
 
 You can detect when a segment is clicked with the delegate method:
